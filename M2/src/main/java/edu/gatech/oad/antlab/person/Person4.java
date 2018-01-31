@@ -1,6 +1,5 @@
 package edu.gatech.oad.antlab.person;
 
-import com.sun.xml.internal.fastinfoset.util.CharArray;
 
 /**
  *  A simple class for person 4
