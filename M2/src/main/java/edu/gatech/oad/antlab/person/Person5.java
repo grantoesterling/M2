@@ -30,15 +30,9 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	    char[] newName = new char[input.length()];
-	  	for (int i = 2, j = 0; i < input.length() && j < input.length() - 2; i++, j++) {
-	  		newName[i] = input.charAt(j);
-		}
-		for (int i = 2, j = newName.length; i > 0 && j > newName.length - 2; i--, j--) {
-	  		newName[j] = input.charAt(i);
-		}
-		//Person 5 put your implementation here
-	  return java.util.Arrays.toString(newName);
+	    	String begin = input.substring(2, input.length());
+		String last = input.substring(0,1);
+		return begin.concat(last);
 	}
 	
 	/**
