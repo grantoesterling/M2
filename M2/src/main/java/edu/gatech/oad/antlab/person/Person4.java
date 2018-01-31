@@ -1,5 +1,7 @@
 package edu.gatech.oad.antlab.person;
 
+import com.sun.xml.internal.fastinfoset.util.CharArray;
+
 /**
  *  A simple class for person 4
  *  returns their name and a
@@ -31,7 +33,15 @@ public class Person4 {
      */
     private String calc(String input) {
       //Person 4 put your implementation here
-      return null;
+      char[] calc = input.toCharArray();
+      int size = calc.length;
+
+      for (int i = 0; i < size; i++) {
+        int next = (int) calc[i] + 1;
+        char c = (char) next;
+        calc[i] = c;
+      }
+      return java.util.Arrays.toString(calc);
     }
     
     /**
