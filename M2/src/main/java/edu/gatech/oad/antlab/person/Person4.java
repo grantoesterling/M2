@@ -40,7 +40,7 @@ public class Person4 {
         char c = (char) next;
         calc[i] = c;
       }
-      return java.util.Arrays.toString(calc);
+      return new String(calc);
     }
     
     /**
