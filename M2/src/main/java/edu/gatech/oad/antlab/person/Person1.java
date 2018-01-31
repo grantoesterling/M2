@@ -32,7 +32,7 @@ public class Person1 {
 
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-		String start = input.substring(2, input.length());
+		String start = input.substring(1, input.length());
 		String end = input.substring(0,1);
 		return start.concat(end);
 	}
